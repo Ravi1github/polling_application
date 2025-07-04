@@ -200,7 +200,7 @@ io.on('connection', (socket) => {
 
   // Handle disconnection
   socket.on('disconnect', () => {
-    console.log('Client disconnected:', socket.id);
+    console.log('Client disconnected now:', socket.id);
     
     if (students.has(socket.id)) {
       students.delete(socket.id);
